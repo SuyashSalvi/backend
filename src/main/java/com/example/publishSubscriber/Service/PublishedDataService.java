@@ -304,7 +304,7 @@ public String fetchAndStoreMappedDataForSubscriber(SubscriberDataUpdateRequest u
 
         // String som_string = "setSiddhesh";
 
-        if("siddhesh".equals(username)){
+        if("suyash".equals(username)){
               // Update the PublishedData to mark it as fetched for broker
             data.setSiddhesh(true);
             publishedDataRepository.save(data);
