@@ -272,12 +272,12 @@ public String fetchAndStoreMappedDataForSubscriber(SubscriberDataUpdateRequest u
     // Find the index of the "@" symbol
     int atIndex = email.indexOf('@');
     String username = email.substring(0, atIndex);
-    if(username=="prathmesh"){
-        username = "piyush";
-    }
-    if(username=="suyash"){
-        username = "siddhesh";
-    }
+    // if(username=="prathmesh"){
+    //     username = "piyush";
+    // }
+    // if(username=="suyash"){
+    //     username = "siddhesh";
+    // }
     System.out.println(username);
 
     // ...
