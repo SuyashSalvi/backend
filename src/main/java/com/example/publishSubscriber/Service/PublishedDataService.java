@@ -145,7 +145,7 @@ public class PublishedDataService {
 }
 
 // public String sendPublishDataToBrokerAndLog(PublishedData insertedData) {
-//     try {
+//     try {    
 //         // Extract the required parameters
 //         String publishSector = insertedData.getPublishSector();
 //         String publishMessage = insertedData.getPublishMessage();
@@ -272,7 +272,12 @@ public String fetchAndStoreMappedDataForSubscriber(SubscriberDataUpdateRequest u
     // Find the index of the "@" symbol
     int atIndex = email.indexOf('@');
     String username = email.substring(0, atIndex);
-
+    if(username=="prathmesh"){
+        username = "piyush";
+    }
+    if(username=="suyash"){
+        username = "siddhesh";
+    }
     System.out.println(username);
 
     // ...
@@ -304,7 +309,7 @@ public String fetchAndStoreMappedDataForSubscriber(SubscriberDataUpdateRequest u
 
         // String som_string = "setSiddhesh";
 
-        if("suyash".equals(username)){
+        if("siddhesh".equals(username)){
               // Update the PublishedData to mark it as fetched for broker
             data.setSiddhesh(true);
             publishedDataRepository.save(data);
